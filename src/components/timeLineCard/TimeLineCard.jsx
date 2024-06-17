@@ -6,15 +6,12 @@ import opn from './../../assets/opn.svg'
 import banner from './../../assets/banner.jpeg'
 import banner2 from './../../assets/banner2.jpeg'
 
-const NewsCard = () => {
+const TimeLineCard = () => {
   return (
     <div className='lg:w-[32%]'>
         <div className='news-card'>
-            <img src={banner} alt="" />
             <div className='card-detail'> 
                 <p className='news-card-date'>13 March 2021</p>
-                <h1 className='my-2'>Maize trade offer Aboti canvassing Jalgaon</h1>
-                <p className='sub-title my-2'>Deals in Maize, Wheat, Moong, Chana Urad, Jowar, Kabuli</p>
                 <div className='flex mt-2'>
                     <div>
                         <img className='flex mt-1' src={opn} alt="" />
@@ -44,4 +41,4 @@ const NewsCard = () => {
   )
 }
 
-export default NewsCard
+export default TimeLineCard

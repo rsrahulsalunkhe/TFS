@@ -4,3 +4,15 @@
   padding: 2rem; */
   /* text-align: center; */
 }
+
+.load-btn {
+  margin-top: 20px;
+  background-color: var(--orange);
+  border-radius: 30px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 50px;
+  margin-right: 50px;
+  cursor: pointer;
+}

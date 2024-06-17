@@ -15,27 +15,19 @@ const Categories = () => {
   const { categorieType } = useParams();
   return (
     <div>
-        {/* <div className='header p-5 px-10'>
-            <img className='me-5' src={arrowLeftSolid} alt="" />
-            <span className=''>CHANA</span>
-            <div className='flex ms-auto gap-6'>
-                <img className='' src={whatsapp} alt="" />
-                <img className='' src={phone} alt="" />
-            </div>
-        </div> */}
         <Header title={categorieType} />
 
-        <div className='px-5'>
-          <div className='flex gap-10 justify-center mt-5'>
+        <div className='px-1'>
+          <div className='flex gap-10 mt-5 lg:justify-start justify-center'>
             <div className='side-img lg:block'>
               <img className='w-full h-full' src={chana} alt="" />
             </div>
 
-            <div>
+            <div className='flex flex-col'>
               <div className='title'><span>Everything here is Chana Excusive</span></div>
               <div className='mt-8' style={{fontSize: "20px"}}><span><b>Premium</b> Member Offers for you</span></div>
-              <div className=''><p>Up to 50% extra off on crores of products using supercoins
-              </p></div>
+              <div className='w-full'><p style={{fontSize: "12px"}}><b>Up to 50% extra off on crores of products using supercoins
+              </b></p></div>
 
               <div className='card-container'>
                 <CommodityCard img='' title='Chana Sentiments' pageType='sentiment' categorie='chana' btnname='Check' />
@@ -46,20 +38,26 @@ const Categories = () => {
           </div>
 
           <div className='image-container'>
-            <div className='imgCard lg:flex'>
-              <img className='lg:w-[32%] mt-3' src={bannerImg} alt="" />
-              <img className='lg:w-[32%] mt-3' src={bannerImg} alt="" />
-              <img className='lg:w-[32%] mt-3' src={bannerImg} alt="" />
-              <img className='lg:w-[32%] mt-3' src={bannerImg} alt="" />
+            <div className='header-title'>
+              <span>This is title</span>
+            </div>
+            <div className='imgCard lg:flex gap-[2%]'>
+              <img className='lg:w-[32%]' src={bannerImg} alt="" />
+              <img className='lg:w-[32%]' src={bannerImg} alt="" />
+              <img className='lg:w-[32%]' src={bannerImg} alt="" />
+              <img className='lg:w-[32%]' src={bannerImg} alt="" />
             </div>
           </div>
 
-          <div className='news-container gap-4'>
+          <div className='news-container gap-[2%]'>
+            <div className='header-title'>
+              <span>This is title</span>
+            </div>
             <NewsCard />
             <NewsCard />
             <NewsCard />
-            {/* <NewsCard />
-            <NewsCard /> */}
+            <NewsCard />
+            <NewsCard />
           </div>
 
           <div className='load-btn py-3 lg:mx-[400px]'>LOAD MORE REPORTS</div>
