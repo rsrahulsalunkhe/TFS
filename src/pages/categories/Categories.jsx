@@ -18,7 +18,7 @@ const Categories = () => {
     <div>
         <Header title={categorieType} />
 
-        <div className='px-2'>
+        <div className='mx-2'>
           <div className='lg:flex lg:mt-5 lg:gap-10 lg:justify-start'>
             <div className='side-img lg:block'>
               <img className='w-full h-full' src={chana} alt="" />
@@ -66,8 +66,6 @@ const Categories = () => {
           </div>
 
           <div className='load-btn py-3 lg:mx-[400px]'>LOAD MORE REPORTS</div>
-
-          {true ? <h1>Rahul</h1> : <p>Salunkhe</p>}
         </div>
     </div>
   )

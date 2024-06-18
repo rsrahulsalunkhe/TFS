@@ -9,10 +9,10 @@ import coverage from './../../assets/coverage.svg'
 const CommodityCard = (props) => {
   const navigate = useNavigate();
   return (
-    <div className='card lg:w-[32%]'>
+    <div className='card lg:w-[32%]' onClick={() => navigate(`/${props.pageType}/${props.categorie}`)}>
       <div className='circle'><img src={props.img} alt={props.img} /></div>
       <div className='card-title'>{props.categorie}<br />{props.title}</div>
-      <div className='btn' onClick={() => navigate(`/${props.pageType}/${props.categorie}`)}>{props.btnname + " >"}</div>
+      <div className='btn'>{props.btnname + " >"}</div>
     </div>
   )
 }

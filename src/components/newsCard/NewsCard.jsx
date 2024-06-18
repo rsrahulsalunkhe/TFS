@@ -14,25 +14,25 @@ const NewsCard = () => {
             <div className='card-detail'> 
                 <p className='news-card-date'>13 March 2021</p>
                 <h1 className='my-2' style={{lineHeight: 1.15}}>Maize trade offer Aboti canvassing Jalgaon</h1>
-                <p className='sub-title my-2'>Deals in Maize, Wheat, Moong, Chana Urad, Jowar, Kabuli</p>
-                <div style={{lineHeight: 1.1}}>
+                <p className='sub-title my-2' style={{lineHeight: 1.15}}>Deals in Maize, Wheat, Moong, Chana Urad, Jowar, Kabuli</p>
+                <div style={{lineHeight: 1.15}}>
                     <div className='flex mt-2'>
-                        <div>
-                            <img className='flex mt-1' src={opn} alt="" />
+                        <div className='w-[5%] h-[20px]'>
+                            <img className='w-full h-full' src={opn} alt="" />
                         </div>
-                        <p className='text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, fontSize: '16px'}}>Trading Activity Very Dull in Chana and rate down</p>
+                        <p className='w-[94%] text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.1}}>Trading Activity Very Dull in Chana and rate down</p>
                     </div>
                     <div className='flex mt-2'>
-                        <div>
-                            <img className='flex mt-1' src={cub} alt="" />
+                        <div className='w-[5%] h-[20px]'>
+                            <img className='w-full h-full' src={cub} alt="" />
                         </div>
-                        <p className='text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, fontSize: '16px'}}>Trading Activity Very Dull in Chana and rate down</p>
+                        <p className='w-[94%] text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.1}}>Demand in moong very good & market up by 50</p>
                     </div>
                     <div className='flex mt-2'>
-                        <div>
-                            <img className='flex mt-1' src={fire} alt="" />
+                        <div className='w-[5%] h-[20px]'>
+                            <img className='w-full h-full' src={fire} alt="" />
                         </div>
-                        <p className='text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, fontSize: '16px'}}>Trading Activity Very Dull in Chana and rate down</p>
+                        <p className='w-[94%] text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.1}}>Urad Continues to trade firm</p>
                     </div>
                 </div>
                 <p className='load-more text-right me-2'><i>Load More Reports {'>'}</i></p>

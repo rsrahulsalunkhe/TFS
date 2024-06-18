@@ -7,10 +7,10 @@ const Sentiments = () => {
   return (
     <div>
       <Header title='chana' />
-      <div className='flex flex-wrap justify-between'>
-      <SentimentCard />
-      <SentimentCard />
-      <SentimentCard />
+      <div className='flex flex-wrap justify-between mx-2'>
+        <SentimentCard />
+        <SentimentCard />
+        <SentimentCard />
       </div>
       <div className='load-btn py-3 lg:mx-[400px]'>LOAD MORE REPORTS</div>
     </div>

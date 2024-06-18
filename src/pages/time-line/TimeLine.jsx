@@ -7,7 +7,10 @@ const TimeLine = () => {
   return (
     <div>
       <Header />
-      <div>
+      <div className='flex flex-wrap justify-between mx-2'>
+        <TimeLineCard />
+        <TimeLineCard />
+        <TimeLineCard />
         <TimeLineCard />
       </div>
     </div>
