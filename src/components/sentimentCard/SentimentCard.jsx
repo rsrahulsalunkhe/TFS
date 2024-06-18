@@ -8,7 +8,7 @@ const Price = (props) => {
     <div className='price-status'>
         <span style={{fontSize: '14px', fontWeight: 700, color: '#606060'}}>{props.status}</span>
         <span style={{fontSize: '18px', fontWeight: 500, color: '#191919', fontFamily: 'Work Sans'}}>{props.price}</span>
-        <span style={{fontSize: '16px', fontWeight: 500, color: props.color, fontFamily: 'Work Sans'}}>{props.change}</span>
+        <span style={{fontSize: '18px', fontWeight: 500, color: props.color, fontFamily: 'Work Sans'}}>{props.change}</span>
     </div>
   )
 }
