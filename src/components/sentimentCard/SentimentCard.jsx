@@ -1,6 +1,8 @@
 import React from 'react'
 import './style.scss'
 import opn from './../../assets/opn.svg'
+import cub from './../../assets/cub.svg'
+import fire from './../../assets/fire.svg'
 import banner2 from './../../assets/banner2.jpeg'
 
 const Price = (props) => {
@@ -41,6 +43,12 @@ const SentimentCard = () => {
             <div className='flex mt-2'>
                 <div className='w-[7%] h-[24px]'>
                     <img className='w-full h-full' src={opn} alt="" />
+                </div>
+                <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
+            </div>
+            <div className='flex mt-2'>
+                <div className='w-[7%] h-[24px]'>
+                    <img className='w-full h-full' src={cub} alt="" />
                 </div>
                 <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
             </div>
