@@ -18,7 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="categorie/:categorieType" element={<Categories />} />
             <Route path="sentiment/:categorieType" element={<Sentiments />} />
-            <Route path="time-line/:categorieType" element={<TimeLine />} />
+            <Route path="timeline/:categorieType" element={<TimeLine />} />
             <Route path="coverage/:categorieType" element={<Coverage />} />
             <Route path="*" element={<PageNotFound />} />
         </Routes>

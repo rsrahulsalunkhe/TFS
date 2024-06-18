@@ -1,16 +1,16 @@
 .news-card {
     width: 100%;
     text-align: left;
-    border-radius: 16px;
+    border-radius: 12px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     overflow: hidden;
     line-height: 1;
 
     .card-detail {
-        padding: 20px;
+        padding: 20px 10px 20px 20px !important;
         width: 100%;
         text-align: left;
-        border-radius: 8px;
+        border-radius: 12px;
 
         .news-card-date {
             font-weight: 800;
@@ -28,13 +28,13 @@
 
     h1 {
         font-size: 20px;
-        font-weight: 800;
+        font-weight: 750;
     }
 
     .sub-title {
-        font-size: 18px;
-        font-weight: 800;
-        color: gray;
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--gray);
     }
 }
 

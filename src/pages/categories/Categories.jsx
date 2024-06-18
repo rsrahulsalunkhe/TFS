@@ -1,8 +1,5 @@
 import React from 'react'
 import './style.scss'
-import arrowLeftSolid from './../../assets/arrow-left-solid.svg'
-import whatsapp from './../../assets/whatsapp.svg'
-import phone from './../../assets/phone-solid.svg'
 import CommodityCard from '../../components/commodityCard/CommodityCard'
 import NewsCard from '../../components/newsCard/NewsCard'
 import bannerImg from './../../assets/banner.jpeg'
@@ -10,6 +7,10 @@ import chana from './../../assets/chana.jpg'
 import matar from './../../assets/matar.jpg'
 import Header from '../../components/header/Header'
 import { useParams } from "react-router-dom";
+import sentiment from './../../assets/sentiment.svg'
+import timeline from './../../assets/timeline.svg'
+import coverage from './../../assets/coverage.svg'
+import seperatorLine from './../../assets/seperator-line.svg'
 
 const Categories = () => {
   const { categorieType } = useParams();
@@ -17,24 +18,28 @@ const Categories = () => {
     <div>
         <Header title={categorieType} />
 
-        <div className='px-1'>
+        <div className='px-2'>
           <div className='flex gap-10 mt-5 lg:justify-start justify-center'>
             <div className='side-img lg:block'>
               <img className='w-full h-full' src={chana} alt="" />
             </div>
 
             <div className='flex flex-col'>
-              <div className='title'><span>Everything here is Chana Excusive</span></div>
-              <div className='mt-8' style={{fontSize: "20px"}}><span><b>Premium</b> Member Offers for you</span></div>
-              <div className='w-full'><p style={{fontSize: "12px"}}><b>Up to 50% extra off on crores of products using supercoins
+              <div className='title'><p>Everything here is Chana Excusive</p></div>
+              <div className='mt-3' style={{fontSize: "15px", fontWeight: 500}}><span><i style={{fontWeight: 800}}>Premium</i> Member Offers for you</span></div>
+              <div className='w-full'><p style={{fontSize: "11px", fontWeight: 500}}><b>Up to 50% extra off on crores of products using supercoins
               </b></p></div>
 
               <div className='card-container'>
-                <CommodityCard img='' title='Chana Sentiments' pageType='sentiment' categorie='chana' btnname='Check' />
-                <CommodityCard img='' title='Chana Time Line' pageType='time-line' categorie='chana' btnname='Detail' />
-                <CommodityCard img='' title='Chana Coverage' pageType='coverage' categorie='chana' btnname='Read' />
+                <CommodityCard img={sentiment} title='sentiments' pageType='sentiment' categorie='chana' btnname='Check' />
+                <CommodityCard img={timeline} title='time Line' pageType='timeline' categorie='chana' btnname='Detail' />
+                <CommodityCard img={coverage} title='coverage' pageType='coverage' categorie='chana' btnname='Read' />
               </div>
             </div>
+          </div>
+
+          <div className='flex justify-center pt-6'>
+            <img className='lg:w-[50%] w-[80%]' src={seperatorLine} alt="" />
           </div>
 
           <div className='image-container'>
@@ -61,6 +66,8 @@ const Categories = () => {
           </div>
 
           <div className='load-btn py-3 lg:mx-[400px]'>LOAD MORE REPORTS</div>
+
+          {true ? <h1>Rahul</h1> : <p>Salunkhe</p>}
         </div>
     </div>
   )
