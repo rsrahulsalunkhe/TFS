@@ -7,7 +7,7 @@ const Sentiments = () => {
   return (
     <div>
       <Header title='chana' />
-      <div className='flex flex-wrap justify-between mx-2'>
+      <div className='flex flex-wrap justify-between'>
         <SentimentCard />
         <SentimentCard />
         <SentimentCard />
