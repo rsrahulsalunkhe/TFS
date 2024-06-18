@@ -39,10 +39,10 @@ const SentimentCard = () => {
             </div>
 
             <div className='flex mt-2'>
-                <div className='w-[5%] h-[20px]'>
+                <div className='w-[6%] h-[22px]'>
                     <img className='w-full h-full' src={opn} alt="" />
                 </div>
-                <p className='w-[94%] text-left' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.1}}>Trading Activity Very Dull in Chana and rate down</p>
+                <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.1}}>Trading Activity Very Dull in Chana and rate down</p>
             </div>
             <p className='text-left ms-6 mt-2' style={{color: '#1400FC', fontWeight: 700, fontSize: '14px'}}>M P AGRO OVERSEAS, DELHI</p>
         </div>
