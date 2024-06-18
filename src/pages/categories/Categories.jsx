@@ -19,7 +19,7 @@ const Categories = () => {
         <Header title={categorieType} />
 
         <div className='px-2'>
-          <div className='flex gap-10 mt-5 lg:justify-start justify-center'>
+          <div className='lg:flex lg:mt-5 lg:gap-10 lg:justify-start'>
             <div className='side-img lg:block'>
               <img className='w-full h-full' src={chana} alt="" />
             </div>
