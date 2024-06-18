@@ -6,8 +6,8 @@ import banner2 from './../../assets/banner2.jpeg'
 const Price = (props) => {
   return (
     <div className='price-status'>
-        <span style={{fontSize: '14px', fontWeight: 700, color: '#606060'}}>{props.status}</span>
-        <span style={{fontSize: '18px', fontWeight: 500, color: '#191919', fontFamily: 'Work Sans'}}>{props.price}</span>
+        <span style={{fontSize: '15px', fontWeight: 700, color: '#606060'}}>{props.status}</span>
+        <span style={{fontSize: '19px', fontWeight: 500, color: '#191919', fontFamily: 'Work Sans'}}>{props.price}</span>
         <span style={{fontSize: '18px', fontWeight: 500, color: props.color, fontFamily: 'Work Sans'}}>{props.change}</span>
     </div>
   )
@@ -19,8 +19,8 @@ const SentimentCard = () => {
     <div className='w-full lg:w-[32%]'>
         <div className='p-3' style={{boxShadow: 'rgba(0, 0, 0, 0.15) 0px 2px 8px', borderRadius: '12px'}}>
             <div className='flex'>
-                <span style={{color: 'var(--blue)', fontWeight: 700}}>27-09-2023</span>
-                <span style={{color: 'var(--green)', fontWeight: 700}} className='ms-auto'>STEADY TO FIRM</span>
+                <span style={{color: 'var(--blue)', fontWeight: 750, fontSize: '17px'}}>27-09-2023</span>
+                <span style={{color: 'var(--green)', fontWeight: 700, fontSize: '17px'}} className='ms-auto'>STEADY TO FIRM</span>
             </div>
             <div className='flex mt-2'>
                 <div className='location'>
