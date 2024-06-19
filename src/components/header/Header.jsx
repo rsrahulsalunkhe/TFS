@@ -13,7 +13,7 @@ const Header = (props) => {
       <span>{props.title}</span>
       <div className='flex ms-auto icons'>
           <img src={whatsapp} alt="" />
-          <img src={dialer} alt="" />
+          <img style={{width: '18px'}} src={dialer} alt="" />
       </div>
     </div>
   )
