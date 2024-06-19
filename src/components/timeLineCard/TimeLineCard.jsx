@@ -13,22 +13,16 @@ const TimeLineCard = () => {
             <div className='card-detail'> 
                 <p className='news-card-date'>13 March 2021</p>
                 <div className='flex mt-2'>
-                    <div className='w-[5%] h-[20px]'>
+                    <div className='w-[7%] h-[24px]'>
                         <img className='w-full h-full' src={opn} alt="" />
                     </div>
-                    <p className='w-[94%] text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.1}}>Trading Activity Very Dull in Chana and rate down</p>
+                    <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                 </div>
                 <div className='flex mt-2'>
-                    <div className='w-[5%] h-[20px]'>
+                    <div className='w-[7%] h-[24px]'>
                         <img className='w-full h-full' src={cub} alt="" />
                     </div>
-                    <p className='w-[94%] text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.1}}>Demand in moong very good & market up by 50</p>
-                </div>
-                <div className='flex mt-2'>
-                    <div className='w-[5%] h-[20px]'>
-                        <img className='w-full h-full' src={fire} alt="" />
-                    </div>
-                    <p className='w-[94%] text-left ms-2' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.1}}>Urad Continues to trade firm</p>
+                    <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                 </div>
                 <p className='load-more'><i>Load More Reports {'>'}</i></p>
             </div>
