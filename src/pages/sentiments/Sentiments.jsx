@@ -6,7 +6,7 @@ import SentimentCard from '../../components/sentimentCard/SentimentCard'
 const Sentiments = () => {
   return (
     <div>
-      <Header title='chana' />
+      <Header />
       <div className='flex flex-wrap justify-between'>
         <SentimentCard />
         <SentimentCard />

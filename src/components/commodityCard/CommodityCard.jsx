@@ -11,7 +11,7 @@ const CommodityCard = (props) => {
   return (
     <div className='card lg:w-[32%]' onClick={() => navigate(`/${props.pageType}/${props.categorie}`)}>
       <div className='circle'><img src={props.img} alt={props.img} /></div>
-      <div className='card-title'>{props.categorie}<br />{props.title}</div>
+      <div className='card-title'>{props.categorie}<br />{props.pageType}</div>
       <div className='btn'>{props.btnname + " >"}</div>
     </div>
   )

@@ -8,7 +8,7 @@
     }
 }
 
-.title {
+.main-title {
     margin-top: 24px;
     min-height: 36px;
     
@@ -17,7 +17,7 @@
         font-weight: 800;
         color: var(--orange2);
         border: 1.5px solid var(--orange);
-        padding: 8px;
+        padding: 8px 0;
         border-radius: 8px;
         background-color: #FFF2EA;
     }
@@ -49,9 +49,19 @@
 
 .header-title {
     text-align: left;
-    font-size: 20px;
-    font-weight: 800;
     padding-left: 10px;
     width: 100%;
     margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .sub-title {
+        font-size: 14px;
+        margin-top: -6px;
+    }
 }

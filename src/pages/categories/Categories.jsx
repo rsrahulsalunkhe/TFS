@@ -16,7 +16,7 @@ const Categories = () => {
   const { categorieType } = useParams();
   return (
     <div>
-        <Header title={categorieType} />
+        <Header />
 
         <div className='mx-2'>
           <div className='lg:flex lg:mt-5 lg:gap-10 lg:justify-start'>
@@ -25,15 +25,15 @@ const Categories = () => {
             </div>
 
             <div className='flex flex-col'>
-              <div className='title'><p>Everything here is Chana Excusive</p></div>
+              <div className='main-title'><p>Everything here is Chana Exclusive</p></div>
               <div className='mt-3' style={{fontSize: "15px", fontWeight: 500}}><span><i style={{fontWeight: 800}}>Premium</i> Member Offers for you</span></div>
               <div className='w-full'><p style={{fontSize: "11px", fontWeight: 500}}><b>Up to 50% extra off on crores of products using supercoins
               </b></p></div>
 
               <div className='card-container'>
-                <CommodityCard img={sentiment} title='sentiments' pageType='sentiment' categorie='chana' btnname='Check' />
-                <CommodityCard img={timeline} title='time Line' pageType='timeline' categorie='chana' btnname='Detail' />
-                <CommodityCard img={coverage} title='coverage' pageType='coverage' categorie='chana' btnname='Read' />
+                <CommodityCard img={sentiment} pageType='sentiment' categorie='chana' btnname='Check' />
+                <CommodityCard img={timeline} pageType='timeline' categorie='chana' btnname='Detail' />
+                <CommodityCard img={coverage} pageType='coverage' categorie='chana' btnname='Read' />
               </div>
             </div>
           </div>
@@ -44,7 +44,8 @@ const Categories = () => {
 
           <div className='image-container'>
             <div className='header-title'>
-              <span>This is title</span>
+              <span className='title'>This is title</span>
+              <span className='sub-title'>This is sub title</span>
             </div>
             <div className='imgCard lg:flex gap-[2%]'>
               <img className='lg:w-[32%]' src={bannerImg} alt="" />
@@ -56,7 +57,8 @@ const Categories = () => {
 
           <div className='news-container gap-[2%]'>
             <div className='header-title'>
-              <span>This is title</span>
+              <span className='title'>This is title</span>
+              <span className='sub-title'>This is sub title</span>
             </div>
             <NewsCard />
             <NewsCard />

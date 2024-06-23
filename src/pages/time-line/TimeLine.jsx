@@ -6,7 +6,7 @@ import TimeLineCard from '../../components/timeLineCard/TimeLineCard'
 const TimeLine = () => {
   return (
     <div>
-      <Header />
+      <Header title='timeline' />
       <div className='flex flex-wrap justify-between mx-2'>
         <TimeLineCard />
         <TimeLineCard />
