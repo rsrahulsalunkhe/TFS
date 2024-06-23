@@ -12,6 +12,8 @@ const TimeLineCard = (props) => {
         <div className='news-card'>
             <div className='card-detail'> 
                 <p className='news-card-date'>13 March 2021</p>
+                <h1 className='my-2' style={{lineHeight: 1.15}}>Maize trade offer Aboti canvassing Jalgaon</h1>
+                <p className='sub-title my-2' style={{lineHeight: 1.15}}>Deals in Maize, Wheat, Moong, Chana Urad, Jowar, Kabuli</p>
                 <div className='flex mt-2'>
                     <div className='w-[7%] h-[24px]'>
                         <img className='w-full h-full' src={opn} alt="" />

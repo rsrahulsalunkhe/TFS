@@ -11,7 +11,7 @@ import Coverage from "./pages/coverage/Coverage"
 function App() {
 
   return (
-    <div className='text-center lg:mx-[200px] mb-5'>
+    <div className=''>
       <BrowserRouter>
         {/* <Header /> */}
         <Routes>

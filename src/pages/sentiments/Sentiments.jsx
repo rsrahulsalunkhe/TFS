@@ -2,11 +2,13 @@ import React from 'react'
 import './style.scss'
 import Header from '../../components/header/Header'
 import SentimentCard from '../../components/sentimentCard/SentimentCard'
+import HeroSection from '../../components/heroSection/HeroSection'
 
 const Sentiments = () => {
   return (
-    <div>
+    <div className='lg:mx-[200px] text-center'>
       <Header />
+      <HeroSection page='sentiment' />
       <div className='flex flex-wrap justify-between'>
         <SentimentCard />
         <SentimentCard />

@@ -11,15 +11,16 @@ import sentiment from './../../assets/sentiment.svg'
 import timeline from './../../assets/timeline.svg'
 import coverage from './../../assets/coverage.svg'
 import seperatorLine from './../../assets/seperator-line.svg'
+import HeroSection from '../../components/heroSection/HeroSection'
 
 const Categories = () => {
-  const { categorieType } = useParams();
+  const { categorieType } = useParams()
   return (
-    <div>
+    <div className='lg:mx-[200px] text-center'>
         <Header />
 
         <div className='mx-2'>
-          <div className='lg:flex lg:mt-5 lg:gap-10 lg:justify-start'>
+          {/* <div className='lg:flex lg:mt-5 lg:gap-10 lg:justify-start'>
             <div className='side-img lg:block'>
               <img className='w-full h-full' src={chana} alt="" />
             </div>
@@ -36,7 +37,9 @@ const Categories = () => {
                 <CommodityCard img={coverage} pageType='coverage' categorie='chana' btnname='Read' />
               </div>
             </div>
-          </div>
+          </div> */}
+
+          <HeroSection />
 
           <div className='flex justify-center pt-6'>
             <img className='lg:w-[50%] w-[80%]' src={seperatorLine} alt="" />
