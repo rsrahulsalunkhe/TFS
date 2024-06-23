@@ -2,8 +2,10 @@ import React from 'react'
 import './style.scss'
 import chana from './../../assets/chana.png'
 import Header from '../header/Header'
+import { useNavigate } from "react-router-dom";
 
 const AppHome = () => {
+    const navigate = useNavigate();
   return (
     <div className='text-center'>
         <Header />
@@ -13,25 +15,13 @@ const AppHome = () => {
             </div>
         </div>
 
-        <div className='flex justify-center'>
-            <div className='commodity' >
+        <div className='flex justify-evenly'>
+            <div className='commodity' onClick={() => navigate(`/categorie/chana`)} >
                 <div className='img'>
                     <img src={chana} alt="" />
                 </div>
-                <span>Chana</span>
+                <span>Bajra</span>
                 <p className='special'>• Special Report</p>
-            </div>
-            <div className='commodity' >
-                <div className='img'>
-                    <img src={chana} alt="" />
-                </div>
-                <span>Chana</span>
-            </div>
-            <div className='commodity' >
-                <div className='img'>
-                    <img src={chana} alt="" />
-                </div>
-                <span>Chana</span>
             </div>
         </div>
 
@@ -41,7 +31,7 @@ const AppHome = () => {
             </div>
         </div>
 
-        <div className='flex justify-center'>
+        <div className='flex justify-evenly'>
             <div className='commodity' >
                 <div className='img'>
                     <img src={chana} alt="" />
