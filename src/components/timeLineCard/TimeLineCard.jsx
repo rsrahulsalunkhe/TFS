@@ -4,9 +4,9 @@ import cub from './../../assets/cub.svg'
 import fire from './../../assets/fire.svg'
 import opn from './../../assets/opn.svg'
 import banner from './../../assets/banner.jpeg'
-import banner2 from './../../assets/banner2.jpeg'
+import banner3 from './../../assets/banner3.jpeg'
 
-const TimeLineCard = () => {
+const TimeLineCard = (props) => {
   return (
     <div className='lg:w-[32%]'>
         <div className='news-card'>
@@ -29,7 +29,7 @@ const TimeLineCard = () => {
         </div>
 
         <div className='banner-img my-3'>
-            <img src={banner2} alt="" />
+            <img src={props.img} alt="" />
         </div>
     </div>
   )
