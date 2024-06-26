@@ -7,7 +7,7 @@ import HeroSection from '../../components/heroSection/HeroSection'
 const Sentiments = () => {
   return (
     <div className='lg:mx-[200px] text-center'>
-      <Header />
+      <Header title='sentiment' />
       <HeroSection page='sentiment' />
       <div className='flex flex-wrap justify-between'>
         <SentimentCard />

@@ -6,7 +6,7 @@ import HeroSection from '../../components/heroSection/HeroSection'
 const Coverage = () => {
   return (
     <div className='lg:mx-[200px] text-center'>
-      <Header />
+      <Header title='coverage' />
       <HeroSection page='coverage' />
     </div>
   )
