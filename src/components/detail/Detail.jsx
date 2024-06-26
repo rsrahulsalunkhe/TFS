@@ -25,6 +25,14 @@ const Detail = () => {
           <span>Chana prices continued to trade weak across major centres tracking weak cues from futures prices. Bid trend in Nafed auction also indicated similar sentiments.</span>
         </div>
 
+        <div>
+          <img src={banner} alt="" />
+        </div>
+
+        <div className='p-4'>
+          <span>Chana prices continued to trade weak across major centres tracking weak cues from futures prices. Bid trend in Nafed auction also indicated similar sentiments.</span>
+        </div>
+
         <div className='px-4'>
           <span style={{fontWeight: 'bold'}}>Link : </span>
           <a href="www.medium.com">www.medium.com</a>
