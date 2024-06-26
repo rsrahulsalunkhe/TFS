@@ -7,6 +7,7 @@ import './App.css'
 import Sentiments from "./pages/sentiments/Sentiments"
 import TimeLine from "./pages/time-line/TimeLine"
 import Coverage from "./pages/coverage/Coverage"
+import Detail from "./components/detail/Detail"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="sentiment/:categorieType" element={<Sentiments />} />
             <Route path="timeline/:categorieType" element={<TimeLine />} />
             <Route path="coverage/:categorieType" element={<Coverage />} />
+            <Route path="detail/:categorieType" element={<Detail />} />
             <Route path="*" element={<PageNotFound />} />
         </Routes>
         {/* <Footer /> */}

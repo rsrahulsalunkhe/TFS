@@ -1,0 +1,41 @@
+.detail {
+    width: 100%;
+    text-align: left;
+    padding: 20px 10px 20px 10px !important;
+
+    .news-card-date {
+        font-weight: 800;
+        color: var(--black-light);
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 750;
+    }
+
+    .sub-title {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--gray);
+    }
+}
+
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    div {
+        width: 40px;
+        height: 40px;
+        margin-inline-end: 1rem;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--gray);
+    }
+}

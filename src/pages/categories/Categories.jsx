@@ -20,25 +20,6 @@ const Categories = () => {
         <Header />
 
         <div className='mx-2'>
-          {/* <div className='lg:flex lg:mt-5 lg:gap-10 lg:justify-start'>
-            <div className='side-img lg:block'>
-              <img className='w-full h-full' src={chana} alt="" />
-            </div>
-
-            <div className='flex flex-col'>
-              <div className='main-title'><p>Everything here is Chana Exclusive</p></div>
-              <div className='mt-3' style={{fontSize: "15px", fontWeight: 500}}><span><i style={{fontWeight: 800}}>Premium</i> Member Offers for you</span></div>
-              <div className='w-full'><p style={{fontSize: "11px", fontWeight: 500}}><b>Up to 50% extra off on crores of products using supercoins
-              </b></p></div>
-
-              <div className='card-container'>
-                <CommodityCard img={sentiment} pageType='sentiment' categorie='chana' btnname='Check' />
-                <CommodityCard img={timeline} pageType='timeline' categorie='chana' btnname='Detail' />
-                <CommodityCard img={coverage} pageType='coverage' categorie='chana' btnname='Read' />
-              </div>
-            </div>
-          </div> */}
-
           <HeroSection />
 
           <div className='flex justify-center pt-6'>
@@ -63,8 +44,8 @@ const Categories = () => {
               <span className='title'>This is title</span>
               <span className='sub-title'>This is sub title</span>
             </div>
-            <NewsCard />
-            <NewsCard />
+            <NewsCard categorie={categorieType} />
+            <NewsCard categorie={categorieType} />
             <NewsCard />
             <NewsCard />
             <NewsCard />

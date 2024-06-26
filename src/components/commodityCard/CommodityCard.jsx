@@ -1,13 +1,13 @@
 import React from 'react'
 import './style.scss'
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import sentiment from './../../assets/sentiment.svg'
 import timeline from './../../assets/timeline.svg'
 import coverage from './../../assets/coverage.svg'
 
 
 const CommodityCard = (props) => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   return (
     <div className='card lg:w-[32%]' onClick={() => navigate(`/${props.pageType}/${props.categorie}`)}>
       <div className='circle'><img src={props.img} alt={props.img} /></div>

@@ -5,8 +5,10 @@ import fire from './../../assets/fire.svg'
 import opn from './../../assets/opn.svg'
 import banner from './../../assets/banner.jpeg'
 import banner2 from './../../assets/banner2.jpeg'
+import { useNavigate } from "react-router-dom"
 
-const NewsCard = () => {
+const NewsCard = (props) => {
+    const navigate = useNavigate()
   return (
     <div className='lg:w-[32%]'>
         <div className='news-card'>
@@ -29,7 +31,7 @@ const NewsCard = () => {
                         <p className='w-[94%] text-left ms-1' style={{color: 'var(--black)', fontWeight: 700, lineHeight: 1.15}}>Trading Activity Very Dull in Chana and rate down</p>
                     </div>
                 </div>
-                <p className='load-more text-right me-2'><i>Load More Reports {'>'}</i></p>
+                <p className='load-more text-right me-2' onClick={() => navigate(`/detail/${props.categorie}`)}><i>Load More Reports {'>'}</i></p>
             </div>
         </div>
 
