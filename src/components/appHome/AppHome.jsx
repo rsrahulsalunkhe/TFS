@@ -1,11 +1,11 @@
 import React from 'react'
-import './style.scss'
 import chana from './../../assets/chana.png'
 import Header from '../header/Header'
 import { useNavigate } from "react-router-dom";
 import home from './../../assets/home.svg'
 import futures from './../../assets/futures.svg'
 import account from './../../assets/account.svg'
+import './style.scss'
 
 const AppHome = () => {
     const navigate = useNavigate();
