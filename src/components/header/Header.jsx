@@ -10,11 +10,11 @@ const Header = (props) => {
   const { categorieType } = useParams()
   return (
     <div className='header ps-5'>
-      <img onClick={() => navigate(-1)} src={leftArrow} alt="" />
+      {props.title != 'home' && <img onClick={() => navigate(-1)} src={leftArrow} alt="" />}
       <div className='flex flex-col text-left' style={{lineHeight: 1}}>
         <span>{categorieType}</span>
         {props.title == 'categorie'  && <span style={{fontSize: '20px', textTransform: 'capitalize'}}>{props.title}</span>}
-        {console.log(props.title)}
+        {props.title == 'home'  && <span style={{fontSize: '20px', textTransform: 'capitalize'}}>{props.title}</span>}
       </div>
       <div className='flex ms-auto icons'>
           <img src={whatsapp} alt="" />
