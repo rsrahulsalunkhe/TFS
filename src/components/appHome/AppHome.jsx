@@ -1,5 +1,8 @@
 import React from 'react'
 import chana from './../../assets/chana.png'
+import bajra from './../../assets/bajra.jpg'
+import matar from './../../assets/matar.jpg'
+import moong from './../../assets/moong.png'
 import Header from '../header/Header'
 import { useNavigate } from "react-router-dom";
 import home from './../../assets/home.svg'
@@ -19,9 +22,9 @@ const AppHome = () => {
         </div>
 
         <div className='flex justify-evenly'>
-            <div className='commodity' onClick={() => navigate(`/categorie/chana`)} >
+            <div className='commodity'>
                 <div className='img'>
-                    <img src={chana} alt="" />
+                    <img src={bajra} alt="" />
                 </div>
                 <span>Bajra</span>
                 <p className='special'>• Special Report</p>
@@ -35,7 +38,7 @@ const AppHome = () => {
         </div>
 
         <div className='flex justify-evenly'>
-            <div className='commodity' >
+            <div className='commodity' onClick={() => navigate(`/categorie/chana`)} >
                 <div className='img'>
                     <img src={chana} alt="" />
                 </div>
@@ -44,15 +47,15 @@ const AppHome = () => {
             </div>
             <div className='commodity' >
                 <div className='img'>
-                    <img src={chana} alt="" />
+                    <img src={matar} alt="" />
                 </div>
-                <span>Chana</span>
+                <span>Matar</span>
             </div>
             <div className='commodity' >
                 <div className='img'>
-                    <img src={chana} alt="" />
+                    <img src={moong} alt="" />
                 </div>
-                <span>Chana</span>
+                <span>Moong</span>
             </div>
         </div>
 
