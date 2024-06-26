@@ -3,6 +3,9 @@ import './style.scss'
 import chana from './../../assets/chana.png'
 import Header from '../header/Header'
 import { useNavigate } from "react-router-dom";
+import home from './../../assets/home.svg'
+import futures from './../../assets/futures.svg'
+import account from './../../assets/account.svg'
 
 const AppHome = () => {
     const navigate = useNavigate();
@@ -59,12 +62,25 @@ const AppHome = () => {
         </div>
 
         <div className='w-full flex justify-around h-auto py-1 px-3 bg-white fixed bottom-0 left-0 z-50'>
-            <span>HOME</span>
-            <span>FUTURES</span>
-            <span>ACCOUNT</span>
+            <div className='flex flex-col items-center'>
+                <div className='w-[30px] h-[30px]'>
+                    <img className='w-full h-full' src={home} alt="" />
+                </div>
+                <span>HOME</span>
+            </div>
+            <div className='flex flex-col items-center'>
+                <div className='w-[30px] h-[30px]'>
+                    <img className='w-full h-full' src={futures} alt="" />
+                </div>
+                <span>FUTURES</span>
+            </div>
+            <div className='flex flex-col items-center'>
+                <div className='w-[30px] h-[30px]'>
+                    <img className='w-full h-full' src={account} alt="" />
+                </div>
+                <span>ACCOUNT</span>
+            </div>
         </div>
-
-
     </div>
   )
 }
