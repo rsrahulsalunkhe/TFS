@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
 import CommodityCard from '../../components/commodityCard/CommodityCard'
 import NewsCard from '../../components/newsCard/NewsCard'
@@ -12,6 +12,7 @@ import timeline from './../../assets/timeline.svg'
 import coverage from './../../assets/coverage.svg'
 import seperatorLine from './../../assets/seperator-line.svg'
 import HeroSection from '../../components/heroSection/HeroSection'
+import DetailPopup from '../../components/detailPopup/DetailPopup'
 
 const Categories = () => {
   const { categorieType } = useParams()
@@ -50,7 +51,6 @@ const Categories = () => {
             <NewsCard />
             <NewsCard />
           </div>
-
           <div className='load-btn py-3 lg:mx-[400px]'>LOAD MORE REPORTS</div>
         </div>
     </div>

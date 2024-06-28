@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './style.scss'
 import cub from './../../assets/cub.svg'
 import fire from './../../assets/fire.svg'
@@ -6,14 +6,17 @@ import opn from './../../assets/opn.svg'
 import banner from './../../assets/banner.jpeg'
 import banner2 from './../../assets/banner2.jpeg'
 import { useNavigate } from "react-router-dom"
+import DetailPopup from '../detailPopup/DetailPopup'
 
 const NewsCard = (props) => {
+    const [show, setShow] = useState(false);
+    const [videoId, setVideoId] = useState(null);
     const navigate = useNavigate()
   return (
     <div className='lg:w-[32%]'>
         <div className='news-card'>
             <img src={banner} alt="" />
-            <div className='card-detail'> 
+            <div className='card-detail' onClick={() => {setShow(true);setVideoId(video.key);}}>
                 <p className='news-card-date'>13 March 2021</p>
                 <h1 className='my-2' style={{lineHeight: 1.15}}>Maize trade offer Aboti canvassing Jalgaon</h1>
                 <p className='sub-title my-2' style={{lineHeight: 1.15}}>Deals in Maize, Wheat, Moong, Chana Urad, Jowar, Kabuli</p>
@@ -33,6 +36,7 @@ const NewsCard = (props) => {
                 </div>
                 <p className='load-more text-right me-2' onClick={() => navigate(`/detail/${props.categorie}`)}><i>Load More Reports {'>'}</i></p>
             </div>
+            <DetailPopup show={show} setShow={setShow} videoId={videoId} setVideoId={setVideoId} />
         </div>
 
         <div className='banner-img my-3'>
